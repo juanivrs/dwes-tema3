@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+}
+
+ul li a:hover {
+  text-decoration: none;
+  color: #000000;
+  background-color: #4caf50;
+}
+ul li {
+  float: left;
+  list-style: none;
+  text-align: center;
+  background-color: #000000;
+  margin-right: 30px;
+  width: 150px;
+  line-height: 60px;
+}
+
+header {
+  background-color: #000000;
+  height: 12vh;
+  color: white;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  vertical-align: center;
+  height: 100%;
+}
+
+.lang {
+  float: right;
+  margin: 15px;
+  display: flex;
+  margin-left: 60%;
+}
+
+.botonsubida {
+  margin-top: 5%;
+  margin-left: 5%;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #7aa8b7;
+  border-radius: 6px;
+  outline: none;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.formdiv {
+  width: 30%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.langbutton,
+.langok {
+  width: auto;
+  margin-right: 20px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 6vh;
+}
+
+.pdfhead {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.pdftable {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table,
+td,
+tr {
+  border: 2px solid black;
+}
+
+td {
+  text-align: center;
+}
+
+.flexbox {
+  margin: 0 auto;
+  display: flex; /* or inline-flex */
+  width: 80%;
+  flex-flow: row wrap;
+  width: auto;
+  border: 4px solid black;
+}
+
+.caja {
+  border: 1px solid black;
+
+  width: 20%;
+  height: 40vh;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.active {
+  text-decoration: none;
+  color: #000000;
+  background-color: #4caf50;
+}
