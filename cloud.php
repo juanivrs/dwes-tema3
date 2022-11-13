@@ -34,10 +34,13 @@ require "lengua.php";
 
     echo  "<h1 class='pdfhead'>PDF</h1>";
     echo "<table class='pdftable'>";
+    if(empty($ficherosPdf)){
+        echo "<h1 style='text-align:center'>Vacío</h1>";
+    }else{ 
     for ($i = 0; $i < sizeof($ficherosPdf); $i++) {
         $nombre = mb_substr($ficherosPdf[$i], 11);
         echo "<tr> <td> <a href='{$ficherosPdf[$i]}' download='true'>$nombre </a> </td> </tr>";
-    }
+    }}
     echo '</table>';
 
     echo  "<h1 class='pdfhead'>PNG,JPG,GIF</h1>";

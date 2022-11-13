@@ -71,6 +71,11 @@ $cadenas = [
         'es' => 'Nube',
 
         'en' => 'Cloud'
+    ],
+    'botonenviar' => [
+        'es' => 'Enviar',
+
+        'en' => 'Send'
     ]
 
 ];

@@ -16,12 +16,14 @@ function formprint($error = array("nombre" => "","fichero" => "","repetido" => "
     echo '<label>' . getCadena('seleccionfichero') . '</label>';
     echo $error["fichero"] === "" ? "" : "<p style='color:red'>".$error["fichero"]."</p>";
     echo $error["repetido"] === "" ? "" : "<p style='color:red'>".$error["repetido"]."</p>";
-    echo <<<END
-    <input name="fichero_usuario" type="file">
-    <input type="submit" value="Enviar fichero">
-    </form>
-    </div>
-    END;
+    if ( $error["repetido"] === "" && $error["fichero"] === "" && $error["nombre"] === "" && $_POST ){
+        echo "<p style='color:green'>Subido con éxito</p>";
+    }
+    echo  '<input name="fichero_usuario" type="file">';
+    echo "<input type='submit' value=". getCadena('botonenviar').">";
+    echo '</form>';
+   echo '</div>';
+    
 }
 ?>
 <!DOCTYPE html>
